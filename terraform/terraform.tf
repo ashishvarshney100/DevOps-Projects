@@ -9,8 +9,6 @@ terraform {
 
 provider "aws" {
   region     = "ap-south-1"
-  access_key = "AKIASCOMMFCLJ2OZPV2U"
-  secret_key = "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"
 }
 
 data "aws_ami" "ubuntu" {
