@@ -9,6 +9,9 @@ terraform {
 
 provider "aws" {
   region     = "ap-south-1"
+  assume_role {
+    role_arn     = "arn:aws:iam::142699407510:role/terraform-role"
+  }
 }
 
 data "aws_ami" "ubuntu" {
